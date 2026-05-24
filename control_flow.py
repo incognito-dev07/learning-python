@@ -1,8 +1,8 @@
-age = int(input("Enter your age: "))
+response = input("Would you like to have some food (Y/N)? ")
 
-if age >= 18:
-  print("You are now signed up")
-elif age <= 0:
-  print("You haven't been born yet")
+if response == "Y":
+  print("Okay, have a seat!")
+elif response == "N":
+  print("Leave my sight!")
 else:
-  print("You must be 18+ to sign up!")
+  print("Invalid response!")
