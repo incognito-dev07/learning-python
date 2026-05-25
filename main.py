@@ -1,25 +1,12 @@
-import math
+# Temperature Conversion Program
+unit = input("Is the temperature in Celsius or Fahrenheit (C/F): ")
+temp = float(input("Enter the temperature: "))
 
-radius = float(input("Enter the radius (cm): "))
-
-diameter = 2 * radius
-circumference = 2 * math.pi * radius
-area = math.pi * pow(radius,2)
-
-print("\nResults:")
-
-print(f"The diameter is: {diameter}")
-print(f"The circumference is: {round(circumference,2)} cm")
-print(f"The area is: {round(area,2)} cm")
-
-
-
-# Control Flow
-response = input("Would you like to have some food (Y/N)? ")
-
-if response == "Y":
-  print("Okay, have a seat!")
-elif response == "N":
-  print("Leave my sight!")
+if unit == "C":
+  temp = round((9 * temp) / 5 + 32, 1)
+  print(f"The temperature in Fahrenheit is: {temp}°F")
+elif unit == "F":
+  temp = round((temp - 32) * 5 / 9, 1)
+  print(f"The temperature in celsius is: {temp}°C")
 else:
-  print("Invalid response!")
+  print(f"{unit} is an invalid temperature unit")
