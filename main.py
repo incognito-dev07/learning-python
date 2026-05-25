@@ -10,3 +10,9 @@ elif unit == "F":
   print(f"The temperature in celsius is: {temp}°C")
 else:
   print(f"{unit} is an invalid temperature unit")
+  
+  
+  
+age = 18
+msg = "Too young" if age < 18 else "Welcome"
+print(msg)
