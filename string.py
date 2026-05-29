@@ -15,8 +15,11 @@ text = "Hello world"
 # text.strip() # removes whitespaces
 # text.replace(old, new) # replaces old with new
 # text.split(seperator) # splits into list
-# text.startswith("prefix") 
-# text.endswith("suffix") # returns boolean
+# text.startswith(prefix) 
+# text.endswith(suffix) # returns boolean
+# text.find(char) # returns idx of first occurence
+# text.count(char) # counts total char occurence
 
 
-print(text.startswith("d"))
+
+print(text.count("l"))
