@@ -8,7 +8,7 @@ def create_character(name, strength, intelligence, charisma):
     return "The character should have a name"
   elif len(name) > 10:
     return "The character name is too long"
-  elif name.find(" ") != -1:
+  elif " " in name:
     return "The character name should not contain spaces"
   elif not (isinstance(strength, int) and isinstance(intelligence, int) and isinstance(charisma, int)):
     return "All stats should be integers"
