@@ -8,6 +8,4 @@ del fruits[3] # deletes the elements at an index
 user = ["Incognito", 19, "SEN/25/1497"]
 name, age, matric = user
 
-print(name)
-print(age)
-print(matric)
+print(name, age, matric)
