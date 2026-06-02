@@ -12,4 +12,6 @@ print(name, age, matric)
 
 # Collecting remaining values
 name, *rest = user
-print(rest)
+print(rest) # prints a list of the remainder
+
+# NB: List slicing works the same way as string slicing
