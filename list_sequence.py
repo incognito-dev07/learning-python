@@ -18,7 +18,8 @@ print(rest) # prints a list of the remainder
 
 
 numbers = [1, 2, 3, 4, 5]
-remaining = [6, 7, 8]
-numbers.append(remaining) # adds to end of the list
+remaining = [7, 8, 9]
+numbers.append(6) # adds to end of the list
+numbers.extend(remaining) # joins two lists
 
 print(numbers)
