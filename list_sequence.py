@@ -14,9 +14,8 @@ print(name, age, matric)
 name, *rest = user
 print(rest) # prints a list of the remainder
 
-# NB: List slicing works the same way as string slicing
 
-
+# List methods
 numbers = [5, 9, -3, 1, 7, 5]
 remaining = [6, -4, 2]; idx = 3
 numbers.append(4) # adds an element to the end
@@ -25,8 +24,10 @@ numbers.insert(idx, 10) # adds element at an index
 numbers.remove(10) # removes a particular element
 numbers.pop(-1) # removes element at an index
 numbers.sort() # sorts the list in place
-new_list = sorted(numbers) # sorts any iterable and returns a new list
-# numbers.clear() # empties the list
-
+new = sorted(numbers) # returns a new sorted list
+numbers.reverse() # reverse the elements of a list
+numbers.clear() # empty the list completely
 
 print(numbers)
+
+# NB: List slicing works the same way as string slicing
