@@ -31,15 +31,19 @@ numbers.clear() # empty the list completely
 print(numbers)
 
 
+print("\n")
 # Tuples
-developer = ("Alice", 18, "Python developer")
+developer = ("Alice", 18, "Python")
 tuple(developer[2]) # converts a string to tuple
 # accessing elements, "in" and "*" keyword, unpacking items all work the samw way in list
 
+# Tuple methods
+country = ("france", "italy", "japan", "iran")
+country.count("italy") # counts total occurence
 
 
 
-
+print(country.count("italy"))
 
 
 
