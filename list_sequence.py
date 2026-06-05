@@ -55,3 +55,5 @@ print(new)
 
 
 # NB: List and Tuple slicing works the same way as string slicing
+
+# The sorted() method in lists and tuples can have optional arguments like 'reverse' and 'key'
