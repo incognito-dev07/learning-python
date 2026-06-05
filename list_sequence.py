@@ -57,3 +57,5 @@ print(new)
 # NB: List and Tuple slicing works the same way as string slicing
 
 # The sorted() method in lists and tuples can have optional arguments like 'reverse' and 'key'
+languages = ["dart", "python", "rust", "java", "c++", "javascript", "lua", "assembly", "swift", "kotlin"]
+sorted(lang)
