@@ -18,6 +18,7 @@ print(rest) # prints a list of the remainder
 # List methods
 numbers = [5, 9, -3, 1, 7, 5]
 remaining = [6, -4, 2]; idx = 3
+numbers.index(9) # finds the index location
 numbers.append(4) # adds an element to the end
 numbers.extend(remaining) # joins two lists
 numbers.insert(idx, 10) # adds element at an index
@@ -26,6 +27,7 @@ numbers.pop(-1) # removes element at an index
 numbers.sort() # sorts the list in place
 new = sorted(numbers) # returns a new sorted list
 numbers.reverse() # reverse the elements of a list
+numbers.count(5) # counts total occurence
 numbers.clear() # empty the list completely
 
 print(numbers)
@@ -34,17 +36,19 @@ print(numbers)
 
 print("\n")
 # Tuples
-developer = ("Alice", 18, "Python")
+developer = ("Alice", 21, "Python")
 tuple(developer[2]) # converts a string to tuple
 # accessing elements, "in" and "*" keyword, unpacking items all work the samw way in list
 
 # Tuple methods
 country = ("france", "italy", "japan", "iran")
 country.count("italy") # counts total occurence
+country.index("france") # finds the index location
 
 
 
-print(country.count("italy"))
+
+print(country.index("italy"))
 
 
 
