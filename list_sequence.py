@@ -6,7 +6,7 @@ del fruits[3] # deletes the elements at an index
 "mango" in fruits # checks if an element exists"
 
 # Unpacking values from a list
-user = ["Incognito", 19, "SEN/25/1497"]
+user = ["Incognito", 19, "Javascript"]
 name, age, matric = user
 print(name, age, matric)
 
@@ -30,7 +30,7 @@ numbers.reverse() # reverse the elements of a list
 numbers.count(5) # counts total occurence
 numbers.clear() # empty the list completely
 
-print(numbers)
+print(new)
 
 
 
