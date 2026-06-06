@@ -11,9 +11,9 @@ while attempts < 7:
   else:
     attempts += 1
     if user_input > answer:
-      print("Too high. Try again")
+      print(f"{user_input} is too high!")
     elif user_input < answer:
-      print("Too low. Try again")
-    print(f"{7 - attempts} attempts left\n")
+      print(f"{user_input} is too low!")
+    print(f"Try again! {7 - attempts} attempts left\n")
 print(f"The correct number is {answer}")
   
