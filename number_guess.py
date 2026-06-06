@@ -3,7 +3,7 @@ import random
 answer = random.randint(0, 100)
 attempts = 0
 
-while attempts < 5:
+while attempts < 7:
   user_input = int(input("Guess the number (1 - 100): "))
   if user_input == answer:
     print(f"Correct: The result is {user_input}")
@@ -14,5 +14,5 @@ while attempts < 5:
       print("Too high. Try again")
     elif user_input < answer:
       print("Too low. Try again")
-    print("{5 - attempts} attempts left)\n")
+    print(f"{5 - attempts} attempts left)\n")
   
