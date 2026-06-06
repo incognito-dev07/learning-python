@@ -9,11 +9,11 @@ while attempts < 7:
     print(f"Correct: The result is {user_input}")
     break
   else:
-    attempts += 1
     if user_input > answer:
       print(f"{user_input} is too high!")
     elif user_input < answer:
       print(f"{user_input} is too low!")
+    attempts += 1
     print(f"Try again! {7 - attempts} attempts left\n")
-print(f"The correct number is {answer}")
+  print(f"The correct number is {answer}")
   
