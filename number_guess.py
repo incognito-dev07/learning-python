@@ -1,7 +1,8 @@
 import random
-print(random.randint(0, 100))
-user_input = None 
 
-# while user_input != number:
-#   user_input = input("Guess the number: ")
-#   break
+answer = random.randint(0, 100)
+attempts = 0
+
+while attempts < 5:
+  user_input = input("Guess the number: ")
+  break
