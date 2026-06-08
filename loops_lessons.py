@@ -21,3 +21,5 @@ ages = [18, 19, 16, 21]
 zipped = list(zip(developers, ages))
 print(zipped)
 
+for name, age in zip(developers, ages):
+  print(f"Name: {name} | Age: {age}")
