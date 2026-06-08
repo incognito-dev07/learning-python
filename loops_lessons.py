@@ -1,7 +1,7 @@
 usernames = ["klaus", "elijah", "rebeccah", "kol", "freya", "finn"]
 
-for name in usernames:
-  print(name)
+for idx, name in enumerate(usernames, 1):
+  print(f"{idx}. {name}")
   
 print("\n")
 for i in range(1, 11):
