@@ -1,11 +1,11 @@
-names = ["klaus", "elijah", "rebeccah", "kol", "freya", "finn"]
+usernames = ["klaus", "elijah", "rebeccah", "kol", "freya", "finn"]
 
-for name in names:
+for name in usernames:
   print(name)
   
 print("\n")
 for i in range(1, 11):
   print(i)
   
-for char in names[0]:
-  print(char)
+even_nums = list(range(0, 21, 2))
+print(even_nums)
