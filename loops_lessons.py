@@ -13,6 +13,11 @@ print(enums)
 
 for idx, name in enumerate(usernames, 1):
   print(f"{idx}. {name}")
-  
+print("\n")
   
 # Zip Function
+developers = ["Naomi", "Tom", "Jessica", "Ben"]
+ages = [18, 19, 16, 21]
+zipped = list(zip(developers, ages))
+print(zipped)
+
