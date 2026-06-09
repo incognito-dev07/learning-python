@@ -1,8 +1,9 @@
 balance = 100.00
 
 def deposit(amount):
-  balance += amount
+  
   print(f"Deposited N{amount} successfully")
+  balance = balance + amount
   
 def withdraw(amount):
   if balance > amount:
@@ -12,7 +13,7 @@ def withdraw(amount):
     print("Insufficient balance!")
     
 def check_balance():
-  print(f"Available balance: N{balance}\n")
+  print(f"\nAvailable balance: N{balance}\n")
 
 while True:
   print("1. Deposit money")
