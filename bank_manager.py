@@ -1,10 +1,12 @@
 balance = 100.00
 
-def deposit(balance, amount):
+def deposit(amount):
+  global balance
   balance += amount
   print(f"Deposited N{amount} successfully")
   
-def withdraw(balance, amount):
+def withdraw(amount):
+  global balance
   if balance > amount:
     balance -= amount
     print(f"Withdrew N{amount} successfully")
