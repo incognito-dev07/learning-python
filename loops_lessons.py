@@ -36,7 +36,7 @@ print(even_odd)
 # Anonymous Functions (lambda)
 letters = ["a", "b", "c", "d"]
 for char in letters:
-  print(lambda x: x.upper()(char))
+  print((lambda x: x.upper())(char))
 
 # Filter Functions
 words = ["tree", "sky", "river", "mountain", "cloud", "sun"]
