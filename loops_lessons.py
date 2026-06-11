@@ -23,3 +23,5 @@ print(zipped)
 
 for name, age in zip(developers, ages):
   print(f"Name: {name} — Age: {age}")
+  
+# List Comprehension
