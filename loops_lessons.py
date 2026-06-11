@@ -23,5 +23,8 @@ print(zipped)
 
 for name, age in zip(developers, ages):
   print(f"Name: {name} — Age: {age}")
+print("\n")
   
 # List Comprehension
+even = num for num in range(21) num % 2 == 0
+print(even)
