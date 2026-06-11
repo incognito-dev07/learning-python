@@ -32,3 +32,17 @@ print(even)
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 even_odd = [(num, "even") if num % 2 == 0 else (num, "odd") for num in numbers]
 print(even_odd)
+
+# Filter Functions
+words = ["tree", "sky", "river", "mountain", "cloud", "sun"]
+def is_short_word(words):
+  return len(words) > 4
+short_words = list(filter(is_short_word, words))
+print(short_words)
+
+# Map Function
+single = [1, 2, 3, 4, 5]
+def triple_numbers(single):
+  return single * 3
+tripled = list(map(triple_numbers, single))
+print(tripled)
