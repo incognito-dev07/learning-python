@@ -26,5 +26,9 @@ for name, age in zip(developers, ages):
 print("\n")
   
 # List Comprehension
-even = [(num, "even") if num % 2 == 0 else (num, "odd") for num in range(21)]
+even = [num for num in range(21) if num % 2 == 0]
 print(even)
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+even_odd = [(num, "even") if num % 2 == 0 else (num, "odd") for num in numbers]
+print(even_odd)
