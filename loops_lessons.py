@@ -33,6 +33,9 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 even_odd = [(num, "even") if num % 2 == 0 else (num, "odd") for num in numbers]
 print(even_odd)
 
+# Anonymous Functions (lambda)
+
+
 # Filter Functions
 words = ["tree", "sky", "river", "mountain", "cloud", "sun"]
 short_words = list(filter(lambda x: len(x) > 4, words))
