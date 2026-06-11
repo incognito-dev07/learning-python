@@ -34,7 +34,9 @@ even_odd = [(num, "even") if num % 2 == 0 else (num, "odd") for num in numbers]
 print(even_odd)
 
 # Anonymous Functions (lambda)
-
+letters = ["a", "b", "c", "d"]
+for char in letters:
+  print(lambda x: x.upper()(char))
 
 # Filter Functions
 words = ["tree", "sky", "river", "mountain", "cloud", "sun"]
