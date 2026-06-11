@@ -35,14 +35,10 @@ print(even_odd)
 
 # Filter Functions
 words = ["tree", "sky", "river", "mountain", "cloud", "sun"]
-def is_short_word(words):
-  return len(words) > 4
-short_words = list(filter(is_short_word, words))
+short_words = list(filter(lambda x: len(x) > 4, words))
 print(short_words)
 
 # Map Function
 single = [1, 2, 3, 4, 5]
-def triple_numbers(single):
-  return single * 3
-tripled = list(map(triple_numbers, single))
+tripled = list(map(lambda x: x * 3, single))
 print(tripled)
