@@ -1,3 +1,5 @@
+user_input = int(input("Enter a number: "))
+
 def number_pattern(n):
   if not isinstance(n, int):
     return "Argument must be an integer value."
@@ -9,4 +11,4 @@ def number_pattern(n):
       result.append(f"{i+1}")
     return " ".join(result)
     
-print(number_pattern(4))
+print(number_pattern(user_input))
