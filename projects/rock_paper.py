@@ -4,17 +4,16 @@ import time
 
 player_wins = 0
 bot_wins = 0
-options = {"rock": "rock", "r": "rock", "paper": "paper", "p": "paper", "scissors": "scissors", "s": "scissors"}
+options = ["rock", "paper", "scissors"]
 winning_pairs = [("rock", "scissors"), ("paper", "rock"), ("scissors", "paper")]
 
 # Game Logic
 def start_game():
   global player_wins; global bot_wins
-  player = input("Enter your choice (r/p/s): ").lower()
-  player = options.get(player)
-  bot = random.choice(list(options.values()))
+  player = input("Enter your choice (rock/paper/scissors): ").lower()
+  bot = random.choice(options)
   
-  if player == None:
+  if player not in options:
     print("Invalid Input. Try again!")
   elif (player, bot) in winning_pairs:
     player_wins += 1
@@ -27,7 +26,6 @@ def start_game():
     bot_wins += 1
     display_choices(player, bot)
     print("Bot Wins. Try again!")
-  play_again()
 
 # Check Score History
 def check_history():
@@ -39,10 +37,6 @@ def check_history():
 def display_choices(player, bot):
   print(f"\nYour Choice: {player.capitalize()} \nBot Choice: {bot.capitalize()}")
   time.sleep(0.5)
-  
-def play_again():
-  user_input = input("\nPlay again? (y/n): ")
-  if user_input == "y": start_game()
  
 # Main Entry Point 
 while True:
@@ -60,11 +54,3 @@ while True:
     sys.exit("\nThanks for playing the game")
   else:
     print("Invalid option. Try again!")
-
-
-
-
-# Ternary Operator
-# name = "Incognito"
-# age = 119
-# print(f"Welcome, {name}") if age >= 18 else print("Access Denied")
