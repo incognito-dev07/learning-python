@@ -21,7 +21,7 @@ class RPSGame:
   def play_round(self):
     player = self.get_player_choice()
     bot = random.choice(self.options)
-    print(f"\nYour Choice: {player.capitalize()} \nBot Choice: {bot.capitalize()}")
+    print(f"\n\033[1mYour Choice:\033[0m {player.capitalize()} \n\033[1mBot Choice:\033[0m {bot.capitalize()}")
     time.sleep(0.5)
   
     if (player, bot) in self.winning_pairs:
