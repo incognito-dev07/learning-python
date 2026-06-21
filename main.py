@@ -8,7 +8,7 @@ print(data)
 
 page = requests.get("https://media-saver-hub.vercel.app")
 soup = BeautifulSoup(page.text, "html.parser")
-print(soup)
+print(soup.prettify())
 
 
 
