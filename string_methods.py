@@ -1,6 +1,7 @@
 # String Functions
 text = "Incognito is Peak"
 len(text) # returns the total string length
+str(text) # converts any data type to string
 
 print(text.count(""))
 
@@ -37,3 +38,14 @@ print(text.count(""))
 
 # reverse_second_word = second_word[::-1]
 # print(reverse_second_word)
+
+
+
+
+# 1. Clean Phone Number
+phone = "+49 (176) 123-4567"
+phone = phone.replace("+", "").replace("-", "")
+phone = phone.replace("(", "").replace(")", "")
+print(phone.replace(" ", ""))
+
+# 2. 
