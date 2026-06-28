@@ -1,8 +1,24 @@
 import random
-from colorama import Fore, Style
+from colorama import Fore, Style, init
+init(autoreset = True)
 
-print(f"\n{Fore.GREEN}Welcome to the Number Guessing Game!")
-print("-" * 45, "\nI have selected a number between 1 and 100.\nTry to guees it!\n","-" * 45)
+print(f"\n{Fore.GREEN}{Style.BRIGHT}Welcome to the Number Guessing Game!")
+print("-" * 45, "\nI have selected a number between 1 and 100.\nTry to guess it!", "\n" + ("-" * 45))
 
+attempts = 0
 answer = random.randint(1, 101)
-print(answer)
+while attempts < 7:
+  guess = int(input(f"{Fore.CYAN}Enter your guess (1 - 100): {Fore.YELLOW}"))
+  if 0 < guess < 101:
+    if guess < answer:
+      print(f"{Fore.RED}Too Low. Try Again! ({7 - attempts} attempts left).")
+      attempts += 1
+    elif guess > answer:
+      print(f"{Fore.RED}Too High. Try Again! ({7 - attempts} attempts left).")
+      attempts += 1
+    else:
+      print(f"{Fore.GREEN}Correct! You guessed the number {answer} in {attempts} attempts")
+      print("-" * 45, "\nThanks for playing!")
+      break
+  else:
+    print(f"{Fore.RED}Invalid Input. Try Again")
