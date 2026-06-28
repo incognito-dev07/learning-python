@@ -6,16 +6,18 @@ str(text) # converts any data type to string
 print(text.count(""))
 
 
-# # String Methods
-# text = "Hello world"
+# String Methods
+sign = " "; old = "Peak"; new = "Fire"
+text.count("") # returns how often a word appears
+text.split(sign) # splits a string into word list
 # text.upper() # converts string to upper case
 # text.lower() # converts string to lower case
 # text.replace(old, new) # replaces old with new
-# text.split(sign) # splits into list
+# 
 # text.startswith(pre) # checks the first char
 # text.endswith(suff) # checks if it's last char
 # text.find("") # returns idx of first occurence
-# text.count("") # returns how often a word appears
+# 
 # text.isupper() # checks if all char is uppercase
 # text.islower() # checks if all char is lowercase
 # text.capitalize() # makes first letter uppercase
@@ -29,7 +31,7 @@ print(text.count(""))
 
 
 
-# # string slicing
+# String Slicing
 # greeting = "Hello world"
 
 # second_word = greeting[6:]
