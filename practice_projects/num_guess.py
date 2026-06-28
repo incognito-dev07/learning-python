@@ -11,13 +11,13 @@ while attempts < 7:
   guess = int(input(f"{Fore.CYAN}Enter your guess (1 - 100): {Fore.YELLOW}"))
   if 0 < guess < 101:
     if guess < answer:
+      attempts += 1
       print(f"{Fore.RED}Too Low. Try Again! ({7 - attempts} attempts left).")
-      attempts += 1
     elif guess > answer:
-      print(f"{Fore.RED}Too High. Try Again! ({7 - attempts} attempts left).")
       attempts += 1
+      print(f"{Fore.RED}Too High. Try Again! ({7 - attempts} attempts left).")
     else:
-      print(f"{Fore.GREEN}Correct! You guessed the number {answer} in {attempts} attempts")
+      print(f"{Fore.GREEN}Correct! You guessed the number {answer} {Fore.YELLOW}in {attempts} {Fore.GREEN}attempts")
       print("-" * 45, "\nThanks for playing!")
       break
   else:
