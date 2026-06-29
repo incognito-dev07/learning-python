@@ -8,14 +8,14 @@ print("-" * 45, "\nI have selected a number between 1 and 100.\nTry to guess it!
 attempts = 0
 answer = random.randint(1, 101)
 while attempts < 7:
-  guess = int(input(f"{Fore.CYAN}Enter your guess (1 - 100): {Fore.YELLOW}"))
+  guess = int(input(f"{Fore.CYAN}Enter your guess (1 - 100): {Fore.LIGHTGREEN_EX}"))
   if 0 < guess < 101:
     if guess < answer:
       attempts += 1
-      print(f"{Fore.RED}Too Low. Try Again! ({7 - attempts} attempts left).")
+      print(f"{Fore.LIGHTRED_EX}Too Low. Try Again! {Fore.YELLOW}{Style.DIM}({7 - attempts} attempts left)")
     elif guess > answer:
       attempts += 1
-      print(f"{Fore.RED}Too High. Try Again! ({7 - attempts} attempts left).")
+      print(f"{Fore.LIGHTRED_EX}Too High. Try Again! {Fore.YELLOW}{Style.DIM}({7 - attempts} attempts left)")
     else:
       print(f"{Fore.GREEN}Correct! You guessed the number {answer} {Fore.YELLOW}in {attempts} {Fore.GREEN}attempts")
       print("-" * 45, "\nThanks for playing!")
